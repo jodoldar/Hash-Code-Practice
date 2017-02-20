@@ -1,7 +1,10 @@
+package hashcodepractice;
+
 import java.util.Scanner;
 import java.io.File;
 import java.io.IOException;
 import java.awt.Point;
+import java.io.FileNotFoundException;
 
 public class Pizza{
     Cell[][] piz;
@@ -19,11 +22,11 @@ public class Pizza{
             String s = "";
             while(entrada.hasNext()){
                 s = entrada.nextLine();
-                for(int i = 0; i<s.lenght; i++){
+                for(int i = 0; i<s.length(); i++){
                    if(s.charAt(i) == 'T'){
-                       piz[j]][i] = new Cell(true, new Point(j,i));
+                       piz[j][i] = new Cell(true, new Point(j,i));
                    }else{
-                       piz[j]][i] = new Cell(false, new Point(j,i));
+                       piz[j][i] = new Cell(false, new Point(j,i));
                    }
                    j++;
                 }
@@ -37,8 +40,8 @@ public class Pizza{
         }
     }
 
-    public pizza getPizza(){
-        return this.piz;
+    public Pizza getPizza(){
+        return this;
     }
     public int getFilas(){
         return this.filas;
