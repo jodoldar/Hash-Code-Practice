@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.awt.Point;
 import java.io.FileNotFoundException;
 
+
 public class Pizza{
     private Cell[][] piz;
     private int columnas, filas, minL, maxH;
@@ -17,6 +18,7 @@ public class Pizza{
             columnas = entrada.nextInt();
             minL = entrada.nextInt();
             maxH = entrada.nextInt();
+            entrada.nextLine();
             piz = new Cell[filas][columnas];
             int j = 0;
             String s = "";
@@ -28,8 +30,8 @@ public class Pizza{
                    }else{
                        piz[j][i] = new Cell(false, new Point(j,i));
                    }
-                   j++;
                 }
+                j++;
             }
         }catch(FileNotFoundException e){
             System.out.println("El fichero no se puede abrir.");
