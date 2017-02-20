@@ -7,8 +7,8 @@ import java.awt.Point;
 import java.io.FileNotFoundException;
 
 public class Pizza{
-    Cell[][] piz;
-    int columnas, filas, minL, maxH;
+    private Cell[][] piz;
+    private int columnas, filas, minL, maxH;
     public Pizza(File f){
         Scanner entrada = null;
         try{
