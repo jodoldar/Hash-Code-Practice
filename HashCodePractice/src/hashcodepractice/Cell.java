@@ -16,10 +16,12 @@ public class Cell {
     
     private final Point posicion;
     private final boolean ingrediente;
+    private boolean isInSlice;
     
     public Cell(boolean ing, Point pos){
         this.ingrediente = ing;
         this.posicion = pos;
+        this.isInSlice = false;
     }
     
     public boolean getIngrediente(){
@@ -34,4 +36,13 @@ public class Cell {
     public int getYPosicion(){
         return (int)this.posicion.getY();
     }
+    public boolean isInSlice(){
+        return this.isInSlice;
+    }
+    
+    public void setSlice(boolean esta){
+        this.isInSlice = esta;
+    }
+    
+    
 }
