@@ -1,10 +1,11 @@
-import java.awt.Point;
+package hashcodepractice;
 
+import java.awt.Point;
 import java.io.File;
 
 /**
  *
- * @author Josep
+ * @author Josep Dols
  */
 public class HashCodePractice {
 
