@@ -12,11 +12,11 @@ public class HashCodePractice {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        if(args.length<3){
+        if(args.length<1){
             System.err.println("Incorrect number of arguments");
             System.exit(1);
         }else{
-            String nomFich = args[2];
+            String nomFich = args[0];
             File fich = new File(nomFich);
             Pizza pizza = new Pizza(fich);
         }

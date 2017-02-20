@@ -73,6 +73,6 @@ public class Slice{
 	}
 
 	public boolean isValid(int l){
-		return nMushroom >= l && nTomatoe >= l
+		return nMushroom >= l && nTomatoe >= l;
 	}	
 }
