@@ -1,8 +1,9 @@
+
 import java.awt.Point;
 
 public class Slice{
-	Point lUp, rUp, lDown, rDown;
-	int nMushroom, nTomatoe;
+	private Point lUp, rUp, lDown, rDown;
+	private int nMushroom, nTomatoe, lMovement;
 
 	public Slice(Point lu, Point ru, Point ld,Point rd, int nMush, int nTom){
 		this.lUp = lu;
@@ -11,6 +12,7 @@ public class Slice{
 		this.rDown = rd;
 		this.nMushroom = nMush;
 		this.nTomatoe = nTom;
+		this.lMovement = -1;
 	}
 
 	public Point getLUp(){
@@ -49,7 +51,23 @@ public class Slice{
 		return this.nMushroom;
 	}
 
+	public void setNMushroom(int nNMush){
+		this.nMushroom = nNMush;
+	}
+
 	public int getNTomatoe(){
 		return this.nTomatoe;
+	}
+
+	public void setNTomatoe(int nNTom){
+		this.nTomatoe = nNTom;
+	}
+
+	public int getLMovement(){
+		return this.lMovement;
+	}
+
+	public void setLMovement(int lMov){
+		this.lMovement = lMov;
 	}	
 }
