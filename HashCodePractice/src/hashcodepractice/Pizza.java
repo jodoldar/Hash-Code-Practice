@@ -9,7 +9,7 @@ import java.io.FileNotFoundException;
 
 
 public class Pizza{
-    private Cell[][] piz;
+    protected Cell[][] piz;
     private int numCol, numFil, minL, maxH;
     
     /**

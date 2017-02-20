@@ -75,4 +75,8 @@ public class Slice{
 	public boolean isValid(int l){
 		return nMushroom >= l && nTomatoe >= l;
 	}	
+        
+        public int totalCells(){
+            return this.nMushroom + this.nTomatoe;
+        }
 }
