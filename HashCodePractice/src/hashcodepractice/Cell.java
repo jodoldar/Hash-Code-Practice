@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package hashcodepractice;
 
 import java.awt.Point;
@@ -11,7 +6,7 @@ import java.awt.Point;
  * @author Josep Dols
  */
 public class Cell {
-    public static final boolean TOMATE=true;
+    public static final boolean TOMATOE=true;
     public static final boolean MUSHROOM=false;
     
     private final Point posicion;
@@ -39,7 +34,6 @@ public class Cell {
     public boolean isInSlice(){
         return this.isInSlice;
     }
-    
     public void setSlice(boolean esta){
         this.isInSlice = esta;
     }
