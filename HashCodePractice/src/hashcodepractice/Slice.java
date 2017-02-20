@@ -1,4 +1,4 @@
-package hashcodepractice;  
+package hashcodepractice;   
 
 import java.awt.Point;
 

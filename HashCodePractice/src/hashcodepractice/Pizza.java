@@ -1,4 +1,4 @@
-package hashcodepractice;
+package hashcodepractice; 
 
 import java.util.Scanner;
 import java.io.File;
@@ -42,8 +42,8 @@ public class Pizza{
         }
     }
 
-    public Pizza getPizza(){
-        return this;
+    public Cell[][] getPizza(){
+        return this.piz;
     }
     public int getFilas(){
         return this.filas;
