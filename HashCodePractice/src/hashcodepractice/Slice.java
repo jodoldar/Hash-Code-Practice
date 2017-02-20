@@ -70,5 +70,9 @@ public class Slice{
 
 	public void setLMovement(int lMov){
 		this.lMovement = lMov;
+	}
+
+	public boolean isValid(int l){
+		return nMushroom >= l && nTomatoe >= l
 	}	
 }
