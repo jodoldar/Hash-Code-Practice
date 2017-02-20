@@ -1,1 +1,4 @@
 /HashCodePractice/nbproject/private/
+*.class
+*.ctxt
+*.bluej
